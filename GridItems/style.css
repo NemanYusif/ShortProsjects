@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+.gridContainer {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.girdItems p {
+  background-color: rgb(155, 124, 124);
+  padding: 10px;
+  border: 2px solid white;
+}
+.girdItems:first-child {
+  grid-column: 1/3;
+  background-color: aquamarine;
+}
+
+.girdItems:nth-child(9) {
+  grid-column: 2/4;
+  background-color: brown;
+}
+.girdItems:nth-child(11) {
+  grid-column: 1/-1;
+  background-color: blueviolet;
+}
