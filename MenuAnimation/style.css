@@ -4,3 +4,23 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+body {
+  background-color: #333;
+  color: #222;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.contanier {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.contanier.show-nav {
+  transform: rotate(20deg);
+}
